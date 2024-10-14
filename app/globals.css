@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --colorWhite: #ffffff;
+  --colorBlack: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +26,20 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* banner  */
+.banner {
+  background-image: url("images/slider-bg.jpg");
+  min-height: 100vh;
+  color: var(--colorWhite);
+  font-weight: 500;
+}
+
+.stroke_font_1:hover + .stroke_font_2 {
+  -webkit-text-stroke: 3px #fff;
+  -webkit-text-fill-color: transparent;
+}
+.stroke_font_2:hover {
+  color: #acacac;
 }
